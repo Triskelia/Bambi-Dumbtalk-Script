@@ -61,7 +61,7 @@ return
 ::hot::hawt
 ::yes::yis
 ::this::dis
-::so::soooo
+::so::sooo
 return
 
 ;------------------------------------------------------------------------------
@@ -280,9 +280,11 @@ return
 :bambi: caresse:: caresses
 :bambi: carrie:: carries
 ; lot more to add: https://www.worldclasslearning.com/english/five-verb-forms.html
+:bambi: hope:: hopes
 :bambi: see:: sees
 :bambi: meet:: meets
 :bambi: type:: types
+:bambi: use:: uses 
 return
 
 ;------------------------------------------------------------------------------

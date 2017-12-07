@@ -27,13 +27,6 @@ randomString(RandomStuff, num) {
 return	
 }
 
-chanceToTrigger(RandomStuff, chance, total) {
-    Random, Var, %chance%, %total%
-    if (var = chance)
-        gosub, %labela%
-return
-}
-
 ;------------------------------------------------------------------------------
 ; Words, pronouns, nouns, emotes...
 ;------------------------------------------------------------------------------
@@ -68,7 +61,7 @@ return
 ::hot::hawt
 ::yes::yis
 ::this::dis
-::so::soooo
+::so::sooo
 return
 
 ;------------------------------------------------------------------------------
@@ -130,7 +123,6 @@ return
   randomString(RandomStuff, 9) 
 return
 
-
 ;------------------------------------------------------------------------------
 ; Auxiliaries
 ;------------------------------------------------------------------------------
@@ -173,7 +165,7 @@ return
 :bambi: think:: believes ; Bambi doesn't think
 return
 
-#Hotstring B Z ; Conjugates verbs
+#Hotstring B Z; Conjugates verbs
 ; Common bambi related verbs
 :bambi: bend:: bends
 :bambi: bounce:: bounces
@@ -288,9 +280,11 @@ return
 :bambi: caresse:: caresses
 :bambi: carrie:: carries
 ; lot more to add: https://www.worldclasslearning.com/english/five-verb-forms.html
+:bambi: hope:: hopes
 :bambi: see:: sees
 :bambi: meet:: meets
 :bambi: type:: types
+:bambi: use:: uses 
 return
 
 ;------------------------------------------------------------------------------
