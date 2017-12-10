@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMbI DUMBTALK SCRIPT v0.3
+; BAMbI DUMBTALK SCRIPT v0.4
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 

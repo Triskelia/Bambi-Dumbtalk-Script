@@ -30,16 +30,11 @@ return
 ;------------------------------------------------------------------------------
 ; Words, pronouns, nouns, emotes...
 ;------------------------------------------------------------------------------
-#InputLevel 0
-#Hotstring B Z
-::do i::does bambi
-::am i::is bambi
-return
-
 #InputLevel 2
 #Hotstring B
 ::bambi::bambi
-
+::do i::does bambi
+::am i::is bambi
 ::have i::has bambi
 ::i::bambi
 ::me::bambi
