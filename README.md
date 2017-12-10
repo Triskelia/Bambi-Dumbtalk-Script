@@ -1,9 +1,10 @@
 # Bambi Dumbtalk Script
 
-You need AutoHotkey for the script to work.
-Just install it and double-click on the script.
-
 This script automatically replace what you say in discord chat with more Bambi-like stuff
+
+You need AutoHotkey for the script to work: https://autohotkey.com/download/1.1/
+
+Just install it and double-click on the script.
 
 Please note that the script is only active on Discord (can easily be changed). If you want to disable it, you can right-click on its tray icon, then click on "Suspend Hotkeys"
 
