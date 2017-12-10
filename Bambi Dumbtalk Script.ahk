@@ -65,6 +65,9 @@ return
 ::this::dis
 ;::so::sooo
 ::you::u
+::probably::probz
+::well,::like,
+::little::lil'
 
 return
 
@@ -255,6 +258,7 @@ return
 :bambi: march:: marches
 :bambi: mean:: means
 :bambi: move:: moves
+:bambi: need:: needs
 :bambi: nod:: nods
 :bambi: open:: opens
 :bambi: play:: plays
@@ -327,37 +331,67 @@ return
 return
 
 ;------------------------------------------------------------------------------
+; Triggers macros
+;------------------------------------------------------------------------------
+; Warning! triggers ahead!
+; Daddies and Mommies may found this part useful (and could just delete or comment the rest (ctrl+shift+B))
+;
+;		||
+;		||
+;		||
+;	   \||/
+;		\/
+;
+;
+
+#Hotstring B
+::!bs::**BAMBI SLEEP**
+::!gg::**GOOD GIRL**
+::!bd::**BIMBODOLL**
+::!dfc::**DROP FOR COCK**
+::!bul::**BAMBI UNIFORM LOCKED**
+::!zcdo::**ZAP COCK DRAIN OBEY**
+::!bf::**BAMBI FREEZE**
+::!bl::**BAMBI LIMP**
+::!gt::**GIGGLE TIME**
+::!bcac::**BAMBI CUM AND COLLAPSE**
+::!told::**BAMBI DOES AS SHE IS TOLD**
+
+;------------------------------------------------------------------------------
 ; Random sentences insertion
 ;------------------------------------------------------------------------------
 
 #Hotstring B0 Z
 ; randomly add hesitation marks after some specifics words
+
 ::to::
 ::should::
-:?*:,::
-:?*{...}:...::
+:?*:, ::
+:?*{...}:... ::
   Random, Var, 1, 4
   if (var = 1) {
       AutoTrim, off
       RandomStuff =
         ( LTrim
-        ` like... | hmm... |... |
+        like... |hmm... |... |uhhh... |ummm... |um |er |uh |
         )
-      randomString(RandomStuff, 3) 
+      randomString(RandomStuff, 8) 
     } else {
       
   }
 return
 
 ; randomly add Bambi's thoughts between words (2% chance)
+#Hotstring B0 Z
 :?*: ::
-  Random, Var, 1, 50
+  Random, Var, 1, 75
   if (var = 1) {
+      AutoTrim, off
       RandomStuff =
         ( LTrim
-        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |
+        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |hmmm... |uhhh... |ummm... |um |er |uh |
         )
-      randomString(RandomStuff, 3) 
+      randomString(RandomStuff, 9) 
     } else {
       
   }
@@ -382,36 +416,4 @@ return
  *     }
  * return
  */
-  
 
-
-
- 
-
-
-return
-;------------------------------------------------------------------------------
-; Triggers macros
-;------------------------------------------------------------------------------
-; Warning! triggers ahead!
-; Daddies and Mommies may found this part useful (and could just delete or comment the rest (ctrl+shift+B))
-;
-;		||
-;		||
-;		||
-;	   \||/
-;		\/
-;
-;
-#Hotstring B
-::!bs::**BAMBI SLEEP**
-::!gg::**GOOD GIRL**
-::!bd::**BIMBODOLL**
-::!dfc::**DROP FOR COCK**
-::!bul::**BAMBI UNIFORM LOCKED**
-::!zcdo::**ZAP COCK DRAIN OBEY**
-::!bf::**BAMBI FREEZE**
-::!bl::**BAMBI LIMP**
-::!gt::**GIGGLE TIME**
-::!bcac::**BAMBI CUM AND COLLAPSE**
-::!told::**BAMBI DOES AS SHE IS TOLD**
