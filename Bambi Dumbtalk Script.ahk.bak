@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMbI DUMBTALK SCRIPT v0.3
+; BAMbI DUMBTALK SCRIPT v0.4
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 
@@ -93,7 +93,7 @@ return
   )
   randomString(RandomStuff, 3) 
 return
-
+;-----------------------------
 ::your::
   RandomStuff =
   ( LTrim
@@ -101,7 +101,7 @@ return
   )
   randomString(RandomStuff, 2) 
 return
-
+;-----------------------------
 ::hi::
 ::hello::
   RandomStuff =
@@ -117,6 +117,14 @@ return
   RandomStuff =
   ( LTrim
   luv you, byeeee{!}|byeeee{!}|
+  )
+  randomString(RandomStuff, 2) 
+return
+;-----------------------------
+::lot of::
+  RandomStuff =
+  ( LTrim
+  lotz of|lotta|
   )
   randomString(RandomStuff, 2) 
 return
@@ -368,34 +376,49 @@ return
 ::should::
 :?*:, ::
 :?*{...}:... ::
-  Random, Var, 1, 4
-  if (var = 1) {
-      AutoTrim, off
-      RandomStuff =
-        ( LTrim
-        like... |hmm... |... |uhhh... |ummm... |um |er |uh |
-        )
-      randomString(RandomStuff, 8) 
+   Random, Var, 1, 2
+   if (var = 1) {
+      Random, Var, 1, 4
+      if (var = 1) {
+          AutoTrim, off
+          RandomStuff =
+            ( LTrim
+            like... |hmm... |... |uhhh... |ummm... |um |er |uh |
+            )
+          randomString(RandomStuff, 8) 
+        } else {          
+      }
     } else {
-      
-  }
+         Random, Var, 1, 25
+        if (var = 1) {
+       AutoTrim, off
+       RandomStuff =
+         ( LTrim
+         ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |
+         )
+       randomString(RandomStuff, 3) 
+     } else {
+    }
+    }
 return
 
-; randomly add Bambi's thoughts between words (2% chance)
-#Hotstring B0 Z
-:?*: ::
-  Random, Var, 1, 75
-  if (var = 1) {
-      AutoTrim, off
-      RandomStuff =
-        ( LTrim
-        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |hmmm... |uhhh... |ummm... |um |er |uh |
-        )
-      randomString(RandomStuff, 9) 
-    } else {
-      
-  }
-return
+/* ; randomly add Bambi's thoughts between words (2% chance)
+ *  #InputLevel 10
+ *  #Hotstring B0 Z
+ *  :?*: ::
+ *    Random, Var, 1, 75
+ *    if (var = 1) {
+ *        AutoTrim, off
+ *        RandomStuff =
+ *          ( LTrim
+ *          ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |hmmm... |uhhh... |ummm... |um |er |uh |
+ *          )
+ *        randomString(RandomStuff, 9) 
+ *      } else {
+ *     }
+ *  return
+ */
+
 
 ; randomly add stuff at end of 10% of messages (only when pressing Enter)
 ; /!\ When enabled, the Enter key doesn't triggers other hotkeys anymore
