@@ -32,7 +32,6 @@ return
 ;------------------------------------------------------------------------------
 #InputLevel 2
 #Hotstring B
-::is smart:: is dumb
 ::bambi::bambi
 ::do i::does bambi
 ::am i::is bambi
