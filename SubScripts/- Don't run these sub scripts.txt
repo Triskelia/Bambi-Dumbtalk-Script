@@ -1,0 +1,2 @@
+Don't run these sub scripts, they won't work on their own. They are called by the main script (Bambi Dumbtalk Script.ahk).
+Also, don't move them, the main script need them in the "SubScripts" subfolder in order to work.
