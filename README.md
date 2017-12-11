@@ -3,12 +3,12 @@
 This script automatically replace what you type in discord chat with more Bambi-like stuff.
 
 ## Features
-- Every "i" or "me" become "bambi", "myself" becomes "herself"...
-- Automatically conjugate most common verbs to third person when they are refering to you (ie. "i obey" becomes "bambi obeys")
-- Replace some words with ones more appropriate for Bambi (ie. tasty => yummy; best => bestest...)
-- Add Words randomizer (ie. "breasts" can produce "boobz", "bewbz", "honkers"...)
-- Some words and sentences can randomly appear while you type (ie. "like...", "humm...", "... *god bambi is horny*..."...) 
-- Add Triggers macros (ie. "!gg" produces the GG trigger, in bold font)
+- Every `i` or `me` become `bambi`, `myself` becomes `herself`...
+- Automatically conjugate most common verbs to third person when they are refering to you (ie. `i obey` becomes `bambi obeys`)
+- Replace some words with ones more appropriate for Bambi (ie. `tasty` => `yummy`; `best` => `bestest`...)
+- Add Words randomizer (ie. `breasts` can produce `boobz`, `bewbz`, `honkers`...)
+- Some words and sentences can randomly appear while you type (ie. `like...`, `humm...`, `... *god bambi is horny*...`...) 
+- Add Triggers macros (ie. `!gg` produces the GG trigger, in bold font)
 
 ## Instalation instructions
 - Download and install autohotkey 1.1 : https://autohotkey.com/download/1.1/
@@ -28,3 +28,36 @@ This script automatically replace what you type in discord chat with more Bambi-
 The author of this script is curently looking for help to populate the script with new words, especially simple replacement for complexe words.
 - Feel free to create new issues for bugs and suggestions there: https://github.com/Triskelia/Bambi-Dumbtalk-Script/issues
 - Alternatively, you can write your suggestions there: https://docs.google.com/spreadsheets/d/12weFoPZBAYPzqoSmX8Scu9CK13HPQemHRet64JCRy2Q/edit?usp=sharing
+
+## Triggers maccros
+**Warning, Triggers below!!!**
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+ 
+ |
+
+
+- `!bs` => **BAMBI SLEEP**
+- `!gg` => **GOOD GIRL**
+- `!bd` => **BIMBODOLL**
+- `!dfc` => **DROP FOR COCK**
+- `!bul` => **BAMBI UNIFORM LOCKED**
+- `!zcdo` => **ZAP COCK DRAIN OBEY**
+- `!bf` => **BAMBI FREEZE**
+- `!bl` => **BAMBI LIMP**
+- `!gt` => **GIGGLE TIME**
+- `!bcac` => **BAMBI CUM AND COLLAPSE**
+- `!told` => **BAMBI DOES AS SHE IS TOLD**
