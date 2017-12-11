@@ -7,7 +7,7 @@ randomString(RandomStuff, num) { ; when called, randomly pick one of the string 
     If ( RND = A_Index )
     {
       SendInput, %A_LoopField%
-      ;SendInput, %A_EndChar%
+      SendInput, %A_EndChar%
       Break
     }
 return	
