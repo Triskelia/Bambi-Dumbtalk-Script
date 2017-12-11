@@ -4,8 +4,8 @@ This script automatically replace what you type in discord chat with more Bambi-
 
 ## Instalation instructions
 - Download and install autohotkey 1.1 : https://autohotkey.com/download/1.1/
-- Download the script and extract it to a location of your choosing (keep the files hierarchy as it is: "Bambi.Dumbtalk.Script.ahk" and the "SubScript" folder containing the other scripts).
-- Run the script by double-clicking on it (or right-click => "Run Script").
+- Download the script and extract it to a location of your choosing (keep the files hierarchy as it is: "Bambi Dumbtalk Script.ahk" and the "SubScript" folder containing the other scripts).
+- Run the main script (Bambi Dumbtalk Script.ahk) by double-clicking on it (or right-click => "Run Script"). And don't try to run the sub scripts, it won't work, and you don't need to.
 - Now it should work on the windows Discord app.
 
 ## Additional notes
