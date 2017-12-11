@@ -2,6 +2,14 @@
 
 This script automatically replace what you type in discord chat with more Bambi-like stuff.
 
+## Features
+- Every "i" or "me" become "bambi", "myself" becomes "herself"...
+- Automatically conjugate most common verbs to third person when they are refering to you (ie. "i obey" becomes "bambi obeys")
+- Replace some words with ones more appropriate for Bambi (ie. tasty => yummy; best => bestest...)
+- Add Words randomizer (ie. "breasts" can produce "boobz", "bewbz", "honkers"...)
+- Some words and sentences can randomly appear while you type (ie. "like...", "humm...", "... *god bambi is horny*..."...) 
+- Add Triggers macros (ie. "!gg" produces the GG trigger, in bold font)
+
 ## Instalation instructions
 - Download and install autohotkey 1.1 : https://autohotkey.com/download/1.1/
 - Download the script and extract it to a location of your choosing (keep the files hierarchy as it is: "Bambi Dumbtalk Script.ahk" and the "SubScript" folder containing the other scripts).
