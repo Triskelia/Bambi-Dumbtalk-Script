@@ -11,6 +11,10 @@ This script automatically replace what you type in discord chat with more Bambi-
 ## Additional notes
 - You can pause the script by right-clicking on its tray icon (on the lower right of your screen) then click on "Suspend Hotkeys". You just need to click on it again to unpause it.
 - Keep in mind that, by default, the script is only active on the desktop Discord app. if you want to change that, you need to edit the script (right-click => "Edit Script") and remove or edit the line "#IfWinActive, Discord". if removed, the script will run everywhere. You can also change it so it runs in other specific apps (ie. "#IfWinActive, Chrome" or "#IfWinActive, Firefox").
+- If the script is producing weird stuff, like words cut in half, you may have several instances of the script running. Please check in the taskbar, and remove all other scripts
+
+## Known bugs
+- Some verbs will sometimes automatically be conjugated to third person when they shouldn't, seems to be a limitation with Autohotkey
 
 ## Contributing
 The author of this script is curently looking for help to populate the script with new words, especially simple replacement for complexe words.
