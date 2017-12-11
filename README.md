@@ -56,6 +56,12 @@ The author of this script is curently looking for help to populate the script wi
  |
  
  |
+ 
+ |
+ 
+ |
+ 
+ |
 
 - `!bs` => **BAMBI SLEEP**
 - `!gg` => **GOOD GIRL**
