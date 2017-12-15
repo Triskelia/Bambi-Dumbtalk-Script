@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT v0.6
+; BAMBI DUMBTALK SCRIPT v0.6.1
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 
@@ -64,16 +64,6 @@ SetWorkingDir %A_ScriptDir%
 ::awesome::bitchin'
 return
 
-#Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring
-::that::das
-::that's::datz
-::thats::datz
-::thatz::datz
-::this::dis
-::you::u
-::you're::u're
-return
-
 ;------------------------------------------------------------------------------
 ; Words randomizers
 ;------------------------------------------------------------------------------
@@ -82,17 +72,27 @@ return
 ;------------------------------------------------------------------------------
 ; Auxiliaries
 ;------------------------------------------------------------------------------
-#Hotstring B Z ; Triggering one of this hotstrings will reset the automatic replacement (to avoid stuff like "bambi would likes")
+
+#Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
 :bambi: am:: is
-:bambi:'m:: is
+::i'm::bambi is
 ::im::Bambi is
 :bambi: have:: has
-:bambi:'ve:: has
+::i've::bambi has
+::ive::bambi has
 :bambi: do:: does
 :bambi: don't:: doesn't
 :bambi: do not:: does not
-:bambi:'ll:: will
-:bambi:'d:: would
+::i'll::bambi will
+::i'd::bambi would
+
+::that::das
+::that's::datz
+::thats::datz
+::thatz::datz
+::this::dis
+::you::u
+::you're::u're
 return
 
 ;------------------------------------------------------------------------------
