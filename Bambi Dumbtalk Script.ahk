@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT v0.4.1
+; BAMBI DUMBTALK SCRIPT v0.6
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 
@@ -20,7 +20,6 @@ SetWorkingDir %A_ScriptDir%
 ;------------------------------------------------------------------------------
 ; Words, pronouns, nouns, emotes...
 ;------------------------------------------------------------------------------
-#InputLevel 2
 #Hotstring B
 ::bambi::bambi
 ::do i::does bambi
@@ -45,6 +44,7 @@ SetWorkingDir %A_ScriptDir%
 
 ::delicious::yummy
 ::tasty::yummy
+::completely::totz
 ::totaly::totz
 ::totally::totz
 ::it is::it's
@@ -52,12 +52,26 @@ SetWorkingDir %A_ScriptDir%
 ::best::bestest
 ::god::gawd
 ::hot::hawt
-::this::dis
-::you::u
 ::probably::probz
 ::well,::like,
 ::little::lil'
 ::girls::girlz
+::dumb::dum
+::confused::ditzy
+::for::4
+::too::2
+::very::so
+::awesome::bitchin'
+return
+
+#Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring
+::that::das
+::that's::datz
+::thats::datz
+::thatz::datz
+::this::dis
+::you::u
+::you're::u're
 return
 
 ;------------------------------------------------------------------------------

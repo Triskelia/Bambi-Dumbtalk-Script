@@ -5,7 +5,7 @@
 ::yes::
   RandomStuff =
   ( LTrim
-  yis |yas |yus |
+  yis|yas|yus|
   )
   randomString(RandomStuff, 3)   
 return
@@ -16,7 +16,7 @@ return
 ::yesssss::
   RandomStuff =
   ( LTrim
-  yisss |yasss |yusss |
+  yisss|yasss|yusss|
   )
   randomString(RandomStuff, 3) 
 return
@@ -24,7 +24,7 @@ return
 ::your::
   RandomStuff =
   ( LTrim
-  ur |yr |
+  ur|yr|
   )
   randomString(RandomStuff, 2) 
 return
@@ -33,7 +33,7 @@ return
 ::hello::
   RandomStuff =
   ( LTrim
-  Hiya{!} |Heya{!} |Hellooo{!} |Like, Hi{!} |
+  Hiya{!}|Heya{!}|Hellooo{!}|Like, Hi{!}|
   )
   randomString(RandomStuff, 4) 
 return
@@ -43,7 +43,7 @@ return
 ::bye::
   RandomStuff =
   ( LTrim
-  luv you, byeeee{!} |byeeee{!} |
+  luv you, byeeee{!}|byeeee{!}|
   )
   randomString(RandomStuff, 2) 
 return
@@ -52,7 +52,7 @@ return
 ::lots of::
   RandomStuff =
   ( LTrim
-  hella |lotta |
+  hella|lotta|
   )
   randomString(RandomStuff, 2) 
 return
@@ -60,7 +60,7 @@ return
 ::cool::
   RandomStuff =
   ( LTrim
-  coool |kewl |
+  coool|kewl|
   )
   randomString(RandomStuff, 2) 
 return
@@ -68,7 +68,7 @@ return
 ::coolest::
   RandomStuff =
   ( LTrim
-  cooolest |kewlest |
+  cooolest|kewlest|
   )
   randomString(RandomStuff, 2) 
 return
@@ -77,7 +77,7 @@ return
 ::ass::
  RandomStuff =
   ( LTrim
-  booty |bum |ass |butt |bottom |
+  booty|bum|ass|butt|bottom|
   )
   randomString(RandomStuff, 5) 
 return
@@ -85,7 +85,7 @@ return
 ::anus::
  RandomStuff =
   ( LTrim
-  fuckhole |pussy |butthole |
+  fuckhole|pussy|butthole|
   )
   randomString(RandomStuff, 3) 
 return
@@ -95,7 +95,7 @@ return
 ::tits::
   RandomStuff =
   ( LTrim
-	boobz |titties |boobs |honkers |boobies |bewbz |knockers |jugs |udders |
+	boobz|titties|boobs|honkers|boobies|bewbz|knockers|jugs|udders|
   )
   randomString(RandomStuff, 9) 
 return
@@ -103,7 +103,7 @@ return
 ::mouth::
   RandomStuff =
   ( LTrim
-	suckhole |mouth |
+	suckhole|mouth|
   )
   randomString(RandomStuff, 2) 
 return
