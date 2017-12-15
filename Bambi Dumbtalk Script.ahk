@@ -72,6 +72,9 @@ return
 ;------------------------------------------------------------------------------
 ; Auxiliaries
 ;------------------------------------------------------------------------------
+#Hotstring B Z
+
+return
 
 #Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
 :bambi: am:: is
@@ -85,8 +88,7 @@ return
 :bambi: do not:: does not
 ::i'll::bambi will
 ::i'd::bambi would
-
-::that::das
+:*:that ::das` `
 ::that's::datz
 ::thats::datz
 ::thatz::datz
