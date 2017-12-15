@@ -92,7 +92,7 @@ return
 ::that's::datz
 ::thats::datz
 ::thatz::datz
-::this::dis
+:*:this ::dis` `
 ::you::u
 ::you're::u're
 return
