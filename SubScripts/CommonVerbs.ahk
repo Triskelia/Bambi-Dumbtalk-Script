@@ -120,6 +120,7 @@
 :bambi: hope:: hopes
 :bambi: see:: sees
 :bambi: meet:: meets
+:bambi: thank:: thanks
 :bambi: type:: types
 :bambi: use:: uses 
 return

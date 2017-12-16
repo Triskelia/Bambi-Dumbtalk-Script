@@ -2,23 +2,12 @@
 ; Words randomizers
 ;------------------------------------------------------------------------------
 #Hotstring B Z
-::yes::
+:*:yes::
   RandomStuff =
   ( LTrim
   yis|yas|yus|
   )
   randomString(RandomStuff, 3)   
-return
-
-::yess::
-::yesss::
-::yessss::
-::yesssss::
-  RandomStuff =
-  ( LTrim
-  yisss|yasss|yusss|
-  )
-  randomString(RandomStuff, 3) 
 return
 ;-----------------------------
 ::your::
@@ -44,6 +33,16 @@ return
   RandomStuff =
   ( LTrim
   luv you, byeeee{!}|byeeee{!}|
+  )
+  randomString(RandomStuff, 2) 
+return
+;-----------------------------
+::okay::
+::ok::
+::okie::
+  RandomStuff =
+  ( LTrim
+  Okie|Like totz{!}|
   )
   randomString(RandomStuff, 2) 
 return
@@ -91,9 +90,7 @@ return
   randomString(RandomStuff, 3) 
 return
 ;-----------------------------
-::boobs::
 ::breasts::
-::tits::
   RandomStuff =
   ( LTrim
 	boobz|titties|boobs|honkers|boobies|bewbz|knockers|jugs|udders|

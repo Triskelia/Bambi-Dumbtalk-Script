@@ -2,32 +2,32 @@
 ; Random sentences insertion
 ;------------------------------------------------------------------------------
 #Hotstring B0 Z
-; randomly add hesitation marks after some specifics words
+; randomly add bambi outburts after some specifics words
 ::to::
 ::should::
 :?*:, ::
 :?*{...}:... ::
-  Random, Var, 1, 2 ; 1 chance out of 2 to trigger one of the next two outcomes
+  Random, Var, 1, 2 ; will trigger one of the next two outcomes
     if (var = 1) {
-      Random, Var, 1, 4 ; 1 chance out of 4 to trigger this
+      Random, Var, 1, 1 ; 1 chance out of 1 to trigger this
       if (var = 1) {
         AutoTrim, off
         RandomStuff =
         ( LTrim
-        like... |hmm... |... |uhhh... |ummm... |um |er |uh |
+        like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |
         )
-        randomString(RandomStuff, 8) 
+        randomString(RandomStuff, 10) 
       } else {          
       }
     } else {
-      Random, Var, 1, 25 ; 1 chance out of 25 to trigger this
+      Random, Var, 1, 15 ; 1 chance out of 15 to trigger this
       if (var = 1) {
         AutoTrim, off
         RandomStuff =
         ( LTrim
-        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |
+        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |
         )
-        randomString(RandomStuff, 3) 
+        randomString(RandomStuff, 5) 
       } else {
       }
     }

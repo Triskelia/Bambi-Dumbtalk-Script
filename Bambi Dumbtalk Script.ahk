@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT v0.6.2
+; BAMBI DUMBTALK SCRIPT v0.6.3
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 
@@ -42,8 +42,8 @@ SetWorkingDir %A_ScriptDir%
 ::hihi::*giggles softly*
 ::lmao::omg{!} *giggles*
 
-::delicious::yummy
-::tasty::yummy
+::delicious::yummie
+::tasty::yummie
 ::completely::totz
 ::totaly::totz
 ::totally::totz
@@ -51,6 +51,7 @@ SetWorkingDir %A_ScriptDir%
 ::kind of::kinda
 ::best::bestest
 ::god::gawd
+::wow::oh gawd
 ::hot::hawt
 ::probably::probz
 ::well,::like,
@@ -58,10 +59,16 @@ SetWorkingDir %A_ScriptDir%
 ::girls::girlz
 ::dumb::dum
 ::confused::ditzy
-::for::4
-::too::2
+; ::for::4
+; ::too::2
 ::very::so
+::so::like so
 ::awesome::bitchin'
+::because::cuz'
+
+::tits::titties
+::boobs::bewbz
+::boobies::bewbz
 return
 
 ;------------------------------------------------------------------------------
@@ -88,13 +95,14 @@ return
 :bambi: do not:: does not
 ::i'll::bambi will
 ::i'd::bambi would
-:*:that ::das` `
+:*:that ::um like that` `
 ::that's::datz
 ::thats::datz
 ::thatz::datz
 :*:this ::dis` `
 ::you::u
 ::you're::u're
+::thanks::thankies
 return
 
 ;------------------------------------------------------------------------------
