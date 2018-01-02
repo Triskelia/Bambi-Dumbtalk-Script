@@ -37,16 +37,6 @@ return
   randomString(RandomStuff, 2) 
 return
 ;-----------------------------
-::okay::
-::ok::
-::okie::
-  RandomStuff =
-  ( LTrim
-  Okie|Like totz{!}|
-  )
-  randomString(RandomStuff, 2) 
-return
-;-----------------------------
 ::a lot of::
 ::lot of::
 ::lots of::
@@ -71,6 +61,19 @@ return
   cooolest|kewlest|
   )
   randomString(RandomStuff, 2) 
+return
+;-----------------------------
+::wholly::
+::entirely:: 
+::completely::
+::totaly::
+::totally::
+::absolutely::
+  RandomStuff =
+  ( LTrim
+  totes|tots|totz|
+  )
+  randomString(RandomStuff, 3) 
 return
 ;-----------------------------
 ::butt::

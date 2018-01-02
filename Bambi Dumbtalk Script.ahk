@@ -1,5 +1,5 @@
 ;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT v0.6.3
+; BAMBI DUMBTALK SCRIPT v0.7
 ;------------------------------------------------------------------------------
 ; a fun script made by bambi Triskelia for her fellow bambi friends <3
 
@@ -32,6 +32,9 @@ SetWorkingDir %A_ScriptDir%
 ::myself::herself
 
 ; Replaces some words too complicated or inappropriate for bambis
+#Hotstring B ;higher priority
+::little::lil'
+
 #Hotstring B Z
 ::hehe::*giggles*
 ::*laughs*::*giggles*
@@ -41,21 +44,20 @@ SetWorkingDir %A_ScriptDir%
 ::^^::*giggles*
 ::hihi::*giggles softly*
 ::lmao::omg{!} *giggles*
-
+::okay::okie
+::ok::okie
+::oki::okie
 ::delicious::yummie
 ::tasty::yummie
-::completely::totz
-::totaly::totz
-::totally::totz
-::it is::it's
+;::it is::it's
 ::kind of::kinda
+:a lil': bit::{BS 6}kinda
 ::best::bestest
+::better::bettah
 ::god::gawd
 ::wow::oh gawd
 ::hot::hawt
 ::probably::probz
-::well,::like,
-::little::lil'
 ::girls::girlz
 ::dumb::dum
 ::confused::ditzy
@@ -79,10 +81,6 @@ return
 ;------------------------------------------------------------------------------
 ; Auxiliaries
 ;------------------------------------------------------------------------------
-#Hotstring B Z
-
-return
-
 #Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
 :bambi: am:: is
 ::i'm::bambi is
@@ -90,9 +88,9 @@ return
 :bambi: have:: has
 ::i've::bambi has
 ::ive::bambi has
+:bambi: haven't:: hasn't
 :bambi: do:: does
 :bambi: don't:: doesn't
-:bambi: do not:: does not
 ::i'll::bambi will
 ::i'd::bambi would
 :*:that ::um like that` `
