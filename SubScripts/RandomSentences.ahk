@@ -8,27 +8,20 @@
 :?*:, ::
 :?*{...}:... ::
   Random, Var, 1, 2 ; will trigger one of the next two outcomes
-    if (var = 1) {
-      Random, Var, 1, 1 ; 1 chance out of 1 to trigger this
-      if (var = 1) {
-        AutoTrim, off
-        RandomStuff =
-        ( LTrim
-        like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |
-        )
-        randomString(RandomStuff, 10) 
-      } else {          
+    if (var = 1)
+    {
+      {
+        sStrings := "like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |"
+        randomString(sStrings, 10)
       }
-    } else {
+    }
+    else
+    {
       Random, Var, 1, 15 ; 1 chance out of 15 to trigger this
-      if (var = 1) {
-        AutoTrim, off
-        RandomStuff =
-        ( LTrim
-        ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |
-        )
-        randomString(RandomStuff, 5) 
-      } else {
+      if (var = 1)
+      {
+        RandomStuff := "... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |"
+        randomString(RandomStuff, 5)
       }
     }
 return
@@ -44,7 +37,7 @@ return
  *          ( LTrim
  *          ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |hmmm... |uhhh... |ummm... |um |er |uh |
  *          )
- *        randomString(RandomStuff, 9) 
+ *        randomString(RandomStuff, 9)
  *      } else {
  *     }
  *  return
@@ -57,7 +50,7 @@ return
  *   send, %A_Space%
  *   Random, Var, 1, 1
  *     AutoTrim, off
- *     if (var = 1) {       
+ *     if (var = 1) {
  *     RandomStuff =
  *     ( LTrim
  *     ` *giggles*| <3| ~|
