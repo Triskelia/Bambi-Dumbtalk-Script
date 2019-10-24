@@ -1,5 +1,5 @@
 ﻿;------------------------------------------------------------------------------
-; Functions
+; when called, randomly pick one of the string listed above the calling command
 ;------------------------------------------------------------------------------
 randomString(sStrings, nCount)
 {
