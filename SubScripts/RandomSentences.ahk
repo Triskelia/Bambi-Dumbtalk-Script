@@ -15,15 +15,6 @@
         randomString(sStrings, 10)
       }
     }
-    else
-    {
-      Random, Var, 1, 15 ; 1 chance out of 15 to trigger this
-      if (var = 1)
-      {
-        RandomStuff := "... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |... *gosh, bambi is like, so ditzy*... |... *Why is bambi so wet?*... |"
-        randomString(RandomStuff, 5)
-      }
-    }
 return
 
 ;---------------------------------------------------------
