@@ -55,11 +55,6 @@ SetWorkingDir %A_ScriptDir%
 return
 
 ;------------------------------------------------------------------------------
-; Words randomizers
-;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\WordsRandomizer.ahk
-
-;------------------------------------------------------------------------------
 ; Auxiliaries
 ;------------------------------------------------------------------------------
 #Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
