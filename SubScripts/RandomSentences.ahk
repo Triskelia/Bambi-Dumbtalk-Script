@@ -26,22 +26,21 @@
     }
 return
 
-/* ; randomly add Bambi's thoughts between words (2% chance)
- *  #InputLevel 10
- *  #Hotstring B0 Z
- *  :?*: ::
- *    Random, Var, 1, 75
- *    if (var = 1) {
- *        AutoTrim, off
- *        RandomStuff =
- *          ( LTrim
- *          ... *god bambi is horny*... |... *bambi needs to be fucked*... |... *bambi wants to suck cock soooooo bad*... |hmmm... |uhhh... |ummm... |um |er |uh |
- *          )
- *        randomString(RandomStuff, 9)
- *      } else {
- *     }
- *  return
- */
+;---------------------------------------------------------
+; Randomly add Bambi's thoughts between words (2% chance)
+;---------------------------------------------------------
+#InputLevel 10
+#Hotstring B0 Z
+:?*: ::
+  Random, Var, 1, 50
+  if (var = 1) 
+  {
+    SendInput {left 1}
+    vStrings := ", like,|, you know,| hmmm...| uhhh...| ummm...| um| er| uh"
+    randomString(vStrings, 8)
+    SendInput {right 1}
+  }
+return
 
 ; randomly add stuff at end of 10% of messages (only when pressing Enter)
 ; /!\ When enabled, the Enter key doesn't triggers other hotkeys anymore
