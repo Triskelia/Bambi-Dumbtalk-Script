@@ -1,8 +1,8 @@
 ;------------------------------------------------------------------------------
 ; Settings
 ;------------------------------------------------------------------------------
-SetTitleMatchMode, 2 ; This let's any window that partially matches the given name get activated
-#IfWinActive, Discord ; This forces the script to only run on Discord's window (Remove or comment it if you want the script to run everywhere)
+SetTitleMatchMode, 2
+#IfWinActive, Discord
 #NoEnv ; For security
 #SingleInstance force
 SetWorkingDir %A_ScriptDir%
@@ -12,27 +12,38 @@ SetWorkingDir %A_ScriptDir%
 ;------------------------------------------------------------------------------
 #Include %A_ScriptDir%\SubScripts\Functions.ahk
 
-; Replaces some words too complicated or inappropriate for bambis
-#Hotstring B ;higher priority
-::little::lil'
+;------------------------------------------------------------------------------
+; Good girls don't backspace!
+;------------------------------------------------------------------------------
+#InputLevel 10
+bs::
+MsgBox % "Good girls don't backspace! <3"
+return
+#InputLevel 0
+;------------------------------------------------------------------------------
+; Giggle time!
+;------------------------------------------------------------------------------
+#Hotstring B
+::haha::*giggle*
+::hehe::*giggle*
+::lol::*giggle*
+::lmao::omg{!} *giggle*
+::*laughs*::*giggle*
+::^^::*giggle*
+return
 
-#Hotstring B Z
-::hehe::*giggles*
-::*laughs*::*giggles*
-::lol::*giggles*
-::lel::*giggles*
-::kek::*giggles*
-::^^::*giggles*
-::hihi::*giggles softly*
-::lmao::omg{!} *giggles*
+;------------------------------------------------------------------------------
+; Basic replacements
+;------------------------------------------------------------------------------
+#Hotstring B
+::little::lil'
 ::okay::okie
 ::ok::okie
 ::oki::okie
 ::delicious::yummie
 ::tasty::yummie
-;::it is::it's
+::it is::it's
 ::kind of::kinda
-:a lil': bit::{BS 6}kinda
 ::best::bestest
 ::better::bettah
 ::god::gawd
@@ -42,37 +53,10 @@ SetWorkingDir %A_ScriptDir%
 ::girls::girlz
 ::dumb::dum
 ::confused::ditzy
-; ::for::4
-; ::too::2
 ::very::so
-::so::like so
-::awesome::bitchin'
 ::because::cuz'
-
-::tits::titties
-::boobs::bewbz
-::boobies::bewbz
-return
-
-;------------------------------------------------------------------------------
-; Auxiliaries
-;------------------------------------------------------------------------------
-#Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
-:*:that ::um like that` `
-::that's::datz
-::thats::datz
-::thatz::datz
-:*:this ::dis` `
-::you::u
-::you're::u're
 ::thanks::thankies
-return
-
-;------------------------------------------------------------------------------
-; Verbs replacement
-;------------------------------------------------------------------------------
-#Hotstring B Z
-:?:ing::in' ; Replace every ing verbs by in' (like fucking => fuckin')
+:?:ing::in'
 return
 
 ;------------------------------------------------------------------------------
