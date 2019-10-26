@@ -33,6 +33,56 @@ return
 return
 
 ;------------------------------------------------------------------------------
+; Contractions
+;------------------------------------------------------------------------------
+;#Hotstring B
+; ::are not::aren't
+; ::cannot::can't
+; ::could have::could've
+; ::could not::couldn't
+; ::did not::didn't
+; ::does not::doesn't
+; ::do not::don't
+; ::everyone is::everyone's
+; ::had not::hadn't
+; ::has not::hasn't
+; ::haven't::have not
+; ::he had::he'd
+; ::he would::he'd
+; ::he shall::he'll
+; ::he will::he'll
+; ::he has::he's
+; ::he is::he's
+; ::how did::how'd
+; ::how would::how'd
+; ::how are::how're
+; ;Got bored at this point!
+; ::it is::it's
+;return
+
+;------------------------------------------------------------------------------
+; Contractions (slang)
+;------------------------------------------------------------------------------
+#Hotstring B
+::am not::ain't
+::are not::ain't
+::is not:: ain't
+::because::'cause
+::don't know::dunno
+::give me::gimme
+::going to::gonna
+::got a::gotta
+::got to::gotta
+::kind of::kinda
+::let me::lemme
+::lot of::lotta
+::out of::outta
+::sort of::sorta
+::want a::wanna
+::want to::wanna
+return
+
+;------------------------------------------------------------------------------
 ; Basic replacements
 ;------------------------------------------------------------------------------
 #Hotstring B
@@ -40,21 +90,15 @@ return
 ::okay::okie
 ::ok::okie
 ::oki::okie
-::delicious::yummie
-::tasty::yummie
-::it is::it's
-::kind of::kinda
+::delicious::yummy
+::tasty::yummy
 ::best::bestest
-::better::bettah
 ::god::gawd
 ::wow::oh gawd
 ::hot::hawt
-::probably::probz
-::girls::girlz
-::dumb::dum
+::probably::totally
 ::confused::ditzy
 ::very::so
-::because::cuz'
 ::thanks::thankies
 :?:ing::in'
 return
