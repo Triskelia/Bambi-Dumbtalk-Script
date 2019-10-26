@@ -1,37 +1,79 @@
 ;------------------------------------------------------------------------------
 ; Random sentences insertion
 ;------------------------------------------------------------------------------
-#Hotstring B0 Z
-; randomly add bambi outburts after some specifics words
+#InstallKeybdHook
+
+;------------------------------------------------------------------------------
+; Randomly add bimbo outbursts after some specific words (50% chance).
+;------------------------------------------------------------------------------
+#Hotstring B0
 ::to::
 ::should::
-:?*:, ::
-:?*{...}:... ::
-  Random, Var, 1, 2 ; will trigger one of the next two outcomes
-    if (var = 1)
-    {
-      {
-        sStrings := "like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |"
-        randomString(sStrings, 10)
-      }
-    }
+  Random, nRand, 1, 2
+  if (nRand = 1)
+  {
+    SendInput {bs 1}
+    SendInput % randomString(", like,|, you know,| basically| literally| totally", 5)
+    SendInput %A_EndChar%
+  }
 return
 
-;---------------------------------------------------------
-; Randomly add Bambi's thoughts between words (2% chance)
-;---------------------------------------------------------
-#InputLevel 10
-#Hotstring B0 Z
+;------------------------------------------------------------------------------
+; Randomly add bimbo outbursts between words (2% chance).
+;------------------------------------------------------------------------------
+#Hotstring B0
 :?*: ::
-  Random, Var, 1, 50
-  if (var = 1) 
+  ; Quit out early if the last character was not alphanumeric.
+  if (RegExMatch(A_PriorKey, "\w") = 0)
+  {
+    return
+  }
+  Random, nRand, 1, 50
+  if (nRand = 1) 
   {
     SendInput {left 1}
-    vStrings := ", like,|, you know,| hmmm...| uhhh...| ummm...| um| er| uh"
-    randomString(vStrings, 8)
+    SendInput % randomString(", like,|, you know,", 2)
     SendInput {right 1}
   }
 return
+
+;------------------------------------------------------------------------------
+; Randomly turns some periods into exclaimations or warbles.
+;------------------------------------------------------------------------------
+; #Hotstring B0
+; :?:.::
+; {
+  ; ;MsgBox % "Running"
+  
+  ; nRegExResult = RegExMatch(A_PriorKey, "[a-zA-Z0-9_]")
+  
+  ; if (nRegExResult = 0)
+  ; {
+    ; MsgBox % "Failed"
+    ; return
+  ; }
+  ; else if (nRegExResult > 0)
+  ; {
+    ; MsgBox % "Success"
+    ; return
+  ; }
+  ; else
+  ; {
+    ; MsgBox % "Error"
+    ; return
+  ; }
+  
+  ; ;Random, nRand, 1, 2
+  ; ;if (nRand = 1) 
+  ; {
+    ; ;SoundBeep,555
+    ; SendInput {bs 2}
+    ; SendInput % randomString("{!}|~", 2)
+    ; SendInput %A_EndChar%
+    ; MsgBox % "Success"
+  ; }
+; }
+; return
 
 ; randomly add stuff at end of 10% of messages (only when pressing Enter)
 ; /!\ When enabled, the Enter key doesn't triggers other hotkeys anymore
