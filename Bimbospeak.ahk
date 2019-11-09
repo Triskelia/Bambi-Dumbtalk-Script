@@ -1,109 +1,42 @@
 ;------------------------------------------------------------------------------
 ; Settings
 ;------------------------------------------------------------------------------
+
 SetTitleMatchMode, 2
 #IfWinActive, Discord
-#NoEnv ; For security
+#InstallKeybdHook
+#NoEnv
 #SingleInstance force
 SetWorkingDir %A_ScriptDir%
 
 ;------------------------------------------------------------------------------
-; Functions
+; Scary programming stuff, not for good little bimbos to look at!
 ;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\Functions.ahk
+#Include %A_ScriptDir%\SubScripts\BS_Functions.ahk
 
 ;------------------------------------------------------------------------------
-; Good girls don't backspace!
+; The following modules can be easily disabled by prefacing their include
+; directive with a semicolon if their behavior is not desired.
+;
+; Not all of these function completely well together; higher modules will
+; stop lower ones from triggering if they both act on the same phrase.
 ;------------------------------------------------------------------------------
-#InputLevel 10
-bs::
-MsgBox % "Good girls don't backspace! <3"
-return
-#InputLevel 0
-;------------------------------------------------------------------------------
-; Giggle time!
-;------------------------------------------------------------------------------
-#Hotstring B
-::haha::*giggle*
-::hehe::*giggle*
-::lol::*giggle*
-::lmao::omg{!} *giggle*
-::*laughs*::*giggle*
-::^^::*giggle*
-return
 
-;------------------------------------------------------------------------------
-; Contractions
-;------------------------------------------------------------------------------
-;#Hotstring B
-; ::are not::aren't
-; ::cannot::can't
-; ::could have::could've
-; ::could not::couldn't
-; ::did not::didn't
-; ::does not::doesn't
-; ::do not::don't
-; ::everyone is::everyone's
-; ::had not::hadn't
-; ::has not::hasn't
-; ::haven't::have not
-; ::he had::he'd
-; ::he would::he'd
-; ::he shall::he'll
-; ::he will::he'll
-; ::he has::he's
-; ::he is::he's
-; ::how did::how'd
-; ::how would::how'd
-; ::how are::how're
-; ;Got bored at this point!
-; ::it is::it's
-;return
-
-;------------------------------------------------------------------------------
-; Contractions (slang)
-;------------------------------------------------------------------------------
-#Hotstring B
-::am not::ain't
-::are not::ain't
-::is not:: ain't
-::because::'cause
-::don't know::dunno
-::give me::gimme
-::going to::gonna
-::got a::gotta
-::got to::gotta
-::kind of::kinda
-::let me::lemme
-::lot of::lotta
-::out of::outta
-::sort of::sorta
-::want a::wanna
-::want to::wanna
-return
-
-;------------------------------------------------------------------------------
-; Basic replacements
-;------------------------------------------------------------------------------
-#Hotstring B
-::little::lil'
-::okay::okie
-::ok::okie
-::oki::okie
-::delicious::yummy
-::tasty::yummy
-::best::bestest
-::god::gawd
-::wow::oh gawd
-::hot::hawt
-::probably::totally
-::confused::ditzy
-::very::so
-::thanks::thankies
-:?:ing::in'
-return
-
-;------------------------------------------------------------------------------
-; Random sentences insertion
-;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\RandomSentences.ahk
+; Prevents backspacing, deleting, or undoing (because good girls get it right)
+#Include %A_ScriptDir%\SubScripts\BS_NoMistakes.ahk
+; Replaces common words with simpler or more bimbo-like versions.
+#Include %A_ScriptDir%\SubScripts\BS_Words.ahk
+; Informal contractions (ain't, gonna, wanna, etc.)
+#Include %A_ScriptDir%\SubScripts\BS_ContractionsInformal.ahk
+; Formal contractions (aren't, could've, how're, etc.)
+#Include %A_ScriptDir%\SubScripts\BS_Contractions.ahk
+; Randomly turns periods into questions, exclaimations, or tildes.
+#Include %A_ScriptDir%\SubScripts\BS_Punctuation.ahk
+; Replaces common laugh sounds (haha, lol, etc.) with giggles.
+#Include %A_ScriptDir%\SubScripts\BS_Giggles.ahk
+; Randomly inserts bimbo phrases (like, totally, you know, etc.)
+#Include %A_ScriptDir%\SubScripts\BS_Outbursts.ahk
+; Replaces some common word sounds with phonetically similar ones.
+#Include %A_ScriptDir%\SubScripts\BS_Sounds.ahk
+; Replaces some words with lazily-typed variants (before -> b4, I see -> ic, etc.)
+#Include %A_ScriptDir%\SubScripts\BS_n00btalk.ahk
