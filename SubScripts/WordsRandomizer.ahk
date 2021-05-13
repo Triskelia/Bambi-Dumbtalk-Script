@@ -1,110 +1,48 @@
 ﻿;------------------------------------------------------------------------------
 ; Words randomizers
 ;------------------------------------------------------------------------------
-#Hotstring B Z
-:*:yes::
-  RandomStuff =
-  ( LTrim
-  yis|yas|yus|
-  )
-  randomString(RandomStuff, 3)   
-return
-;-----------------------------
-::your::
-  RandomStuff =
-  ( LTrim
-  ur|yr|
-  )
-  randomString(RandomStuff, 2) 
-return
-;-----------------------------
-::hi::
-::hello::
-  RandomStuff =
-  ( LTrim
-  Hiya{!}|Heya{!}|Hellooo{!}|Like, Hi{!}|
-  )
-  randomString(RandomStuff, 4) 
-return
-;-----------------------------
-::goodbye::
-::cya::
-::bye::
-  RandomStuff =
-  ( LTrim
-  luv you, byeeee{!}|byeeee{!}|
-  )
-  randomString(RandomStuff, 2) 
-return
-;-----------------------------
-::a lot of::
-::lot of::
-::lots of::
-  RandomStuff =
-  ( LTrim
-  hella|lotta|
-  )
-  randomString(RandomStuff, 2) 
-return
-;-----------------------------
-::cool::
-  RandomStuff =
-  ( LTrim
-  coool|kewl|
-  )
-  randomString(RandomStuff, 2) 
-return
 
-::coolest::
-  RandomStuff =
-  ( LTrim
-  cooolest|kewlest|
-  )
-  randomString(RandomStuff, 2) 
-return
-;-----------------------------
-::wholly::
-::entirely:: 
-::completely::
-::totaly::
-::totally::
-::absolutely::
-  RandomStuff =
-  ( LTrim
-  totes|tots|totz|
-  )
-  randomString(RandomStuff, 3) 
-return
-;-----------------------------
-::butt::
-::ass::
- RandomStuff =
-  ( LTrim
-  booty|bum|ass|butt|bottom|
-  )
-  randomString(RandomStuff, 5) 
-return
+loadWordsRandomizer(state) {
+	if (state == true) {
+	Hotstring("B Z")
+		
+	Hotstring(":*:yes", Func("randomString").Bind("yis|yas|yus|yes", 4))
+	
+	Hotstring("::your", Func("randomString").Bind("ur|yr|", 2))
 
-::anus::
- RandomStuff =
-  ( LTrim
-  fuckhole|pussy|butthole|
-  )
-  randomString(RandomStuff, 3) 
-return
-;-----------------------------
-::breasts::
-  RandomStuff =
-  ( LTrim
-	boobz|titties|boobs|honkers|boobies|bewbz|knockers|jugs|udders|
-  )
-  randomString(RandomStuff, 9) 
-return
-;-----------------------------
-::mouth::
-  RandomStuff =
-  ( LTrim
-	suckhole|mouth|
-  )
-  randomString(RandomStuff, 2) 
-return
+	Hotstring("::hi", Func("randomString").Bind("Hiya{!}|Heya{!}|Hellooo{!}|Like, Hi{!}|", 4))
+	Hotstring("::hello", Func("randomString").Bind("Hiya{!}|Heya{!}|Hellooo{!}|Like, Hi{!}|", 4))
+
+	Hotstring("::goodbye", Func("randomString").Bind("luv you, byeeee{!}|byeeee{!}|", 2))
+	Hotstring("::cya", Func("randomString").Bind("luv you, byeeee{!}|byeeee{!}|", 2))
+	Hotstring("::bye", Func("randomString").Bind("luv you, byeeee{!}|byeeee{!}|", 2))
+	
+	Hotstring("::a lot of", Func("randomString").Bind("hella|lotta|", 2))
+	Hotstring("::lot of", Func("randomString").Bind("hella|lotta|", 2))
+	Hotstring("::lots of", Func("randomString").Bind("hella|lotta|", 2))
+
+	Hotstring("::cool", Func("randomString").Bind("coool|kewl|", 2))
+	Hotstring("::coolest", Func("randomString").Bind("cooolest|kewlest|", 2))
+
+	Hotstring("::wholly", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::entirely", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::completly", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::completely", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::totaly", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::totally", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::absolutly", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::absolutely", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+	Hotstring("::greatly", Func("randomString").Bind("totes|tots|totz|totally|", 4))
+
+	Hotstring("::butt", Func("randomString").Bind("booty|bum|ass|butt|", 4))
+	Hotstring("::ass", Func("randomString").Bind("booty|bum|ass|butt|", 4))
+
+	Hotstring("::anus", Func("randomString").Bind("fuckhole|pussy|butthole|", 3))
+
+	Hotstring("::breasts", Func("randomString").Bind("boobz|titties|boobs|honkers|boobies|bewbz|knockers|jugs|udders|", 9))
+
+	Hotstring("::mouth", Func("randomString").Bind("suckhole|mouth|", 2))
+
+	Hotstring("reset")
+	}
+}

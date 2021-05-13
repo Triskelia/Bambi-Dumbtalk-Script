@@ -1,131 +1,96 @@
-;------------------------------------------------------------------------------
-; BAMBI DUMBTALK SCRIPT v0.7
-;------------------------------------------------------------------------------
-; a fun script made by bambi Triskelia for her fellow bambi friends <3
+/*
+ * * * Compile_AHK SETTINGS BEGIN * * *
+
+[AHK2EXE]
+Exe_File=%In_Dir%\Bambi Dumbtalk Script.exe
+Compression=0
+Created_Date=1
+[VERSION]
+Set_Version_Info=1
+Company_Name=Triskelia (Triskel#0001)
+File_Description=Script automatically replacing what you type in discord desktop app with more Bambi-like stuff.
+File_Version=0.8.0.0
+Inc_File_Version=0
+Internal_Name=Bambi Dumbtalk Script.ahk
+Legal_Copyright=(c) 2017-2021 Triskelia (Triskel#0001)
+Original_Filename=Bambi Dumbtalk Script.ahk
+Product_Name=Bambi Dumbtalk Script
+[ICONS]
+Icon_1=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Running.ico
+Icon_2=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Running.ico
+Icon_3=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
+Icon_4=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
+Icon_5=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
+
+* * * Compile_AHK SETTINGS END * * *
+*/
 
 ;------------------------------------------------------------------------------
-; Settings
+; BAMBI DUMBTALK SCRIPT v1.0
 ;------------------------------------------------------------------------------
-SetTitleMatchMode, 2 ; This let's any window that partially matches the given name get activated
-#IfWinActive, Discord ; This forces the script to only run on Discord's window (Remove or comment it if you want the script to run everywhere)
-#NoEnv ; For security
+; a fun script made by bambi Trisky for her fellow bambi friends <3
+
+;------------------------------------------------------------------------------
+; BASE SETTINGS
+;------------------------------------------------------------------------------
+; @Ahk2Exe-SetMainIcon %A_ScriptDir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
+; @Ahk2Exe-ExeName %A_ScriptDir%\Bambi Dumbtalk Script.ahk
+
+#Include %A_ScriptDir%\SubScripts\Settings.ahk
+SetTitleMatchMode, 2
+GroupAdd, handledApps, %applicationHandled%
+#IfWinActive ahk_group handledApps
+
+; #IfWinActive, Discord ; This forces the script to only run on Discord's window (Remove or comment it if you want the script to run everywhere)
+#InstallKeybdHook
+#NoEnv
 #SingleInstance force
 SetWorkingDir %A_ScriptDir%
 
-;------------------------------------------------------------------------------
-; Functions
-;------------------------------------------------------------------------------
+
+#Include %A_ScriptDir%\SubScripts\Initializer.ahk
 #Include %A_ScriptDir%\SubScripts\Functions.ahk
 
 ;------------------------------------------------------------------------------
-; Words, pronouns, nouns, emotes...
+; CUSTOMIZATION (Obsolete, edit the "Settings.ahk" file instead)
+;
+; The following modules can be easily disabled by prefacing their include
+; directive with a semicolon ";" if their behavior is not desired.
+;
+; If you want to "debambify" the script so it behaves like a generic bimbofier,
+; then you just need to disable "BAMBI Pronouns" and "BAMBI Third Person Verbs" 
+; (But remember, setting "bambiMode" to false in Settings.ahk is sitll prefered)
 ;------------------------------------------------------------------------------
-#Hotstring B
-::bambi::bambi
-::do i::does bambi
-::am i::is bambi
-::have i::has bambi
-::i::bambi
-::me::bambi
-::my::bambi's
-::mine::bambi's
-::myself::herself
 
-; Replaces some words too complicated or inappropriate for bambis
-#Hotstring B ;higher priority
-::little::lil'
+#Include %A_ScriptDir%\SubScripts\BS_Contractions.ahk
+#Include %A_ScriptDir%\SubScripts\BS_ContractionsInformal.ahk
 
-#Hotstring B Z
-::hehe::*giggles*
-::*laughs*::*giggles*
-::lol::*giggles*
-::lel::*giggles*
-::kek::*giggles*
-::^^::*giggles*
-::hihi::*giggles softly*
-::lmao::omg{!} *giggles*
-::okay::okie
-::ok::okie
-::oki::okie
-::delicious::yummie
-::tasty::yummie
-;::it is::it's
-::kind of::kinda
-:a lil': bit::{BS 6}kinda
-::best::bestest
-::better::bettah
-::god::gawd
-::wow::oh gawd
-::hot::hawt
-::probably::probz
-::girls::girlz
-::dumb::dum
-::confused::ditzy
-; ::for::4
-; ::too::2
-::very::so
-::so::like so
-::awesome::bitchin'
-::because::cuz'
+; BAMBI Pronouns : To refer yourself as bambi. Changes personal pronouns to bambi. (I => Bambi)
+#Include %A_ScriptDir%\SubScripts\BambiPronouns.ahk
 
-::tits::titties
-::boobs::bewbz
-::boobies::bewbz
-return
+; Giggles : Replaces common laugh sounds (haha, lol, etc.) with giggles.
+#Include %A_ScriptDir%\SubScripts\Giggles.ahk
 
-;------------------------------------------------------------------------------
-; Words randomizers
-;------------------------------------------------------------------------------
+; Word Replacer : ; Replaces common words with simpler or more bimbo-like versions.
+#Include %A_ScriptDir%\SubScripts\WordReplacer.ahk
+
+; BAMBI Third Person Verbs : Changes verbs whose bambi is the subject to third person. 
+; (not all verbs are covered, you can manually add yours in the "Bambi3rdPersonVerbs.ahk" subScript)
+#Include %A_ScriptDir%\SubScripts\Bambi3rdPersonVerbs.ahk
+
+; Words randomizers : Replace some words from a pool of more fitting synonyms.
 #Include %A_ScriptDir%\SubScripts\WordsRandomizer.ahk
 
-;------------------------------------------------------------------------------
-; Auxiliaries
-;------------------------------------------------------------------------------
-#Hotstring B Z EndChars -()[]{}:;"/\,.?!`n `t ; removes "'" just for this hotstring + reset automatic replacement (to avoid stuff like "bambi would likes")
-:bambi: am:: is
-::i'm::bambi is
-::im::Bambi is
-:bambi: have:: has
-::i've::bambi has
-::ive::bambi has
-:bambi: haven't:: hasn't
-:bambi: do:: does
-:bambi: don't:: doesn't
-::i'll::bambi will
-::i'd::bambi would
-:*:that ::um like that` `
-::that's::datz
-::thats::datz
-::thatz::datz
-:*:this ::dis` `
-::you::u
-::you're::u're
-::thanks::thankies
-return
+; Phonetic : Replaces some common word sounds with phonetically similar ones.
+#Include %A_ScriptDir%\SubScripts\Phonetic.ahk
 
-;------------------------------------------------------------------------------
-; Verbs replacement
-;------------------------------------------------------------------------------
-#Hotstring B Z
-; Replaces some specifics verbs
-:?:ing::in' ; Replace every ing verbs by in' (like fucking => fuckin')
-:bambi: laugh:: giggles
-:bambi: laughs:: giggles
-:bambi: think:: believes ; Bambi doesn't think
-:bambi: thinks:: believes
-return
+; Verbs replacement : Replaces some specifics verbs with more fitting synonyms. ("Bambi laughs" => "Bambi giggles", or "-ing" => "-in'")
+#Include %A_ScriptDir%\SubScripts\VerbsSynonyms.ahk
 
-;------------------------------------------------------------------------------
-; Common verbs conjugation
-;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\CommonVerbs.ahk
+; Punctuation : Randomly turns periods into questions, exclaimations, or tildes.
+#Include %A_ScriptDir%\SubScripts\Punctuation.ahk
 
-;------------------------------------------------------------------------------
-; Triggers macros
-;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\TriggerMacros.ahk
+; Sentences insertion : Randomly insert hesitation marks and horny thoughts.
+#Include %A_ScriptDir%\SubScripts\SentencesInsertions.ahk
 
-;------------------------------------------------------------------------------
-; Random sentences insertion
-;------------------------------------------------------------------------------
-#Include %A_ScriptDir%\SubScripts\RandomSentences.ahk
+

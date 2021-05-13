@@ -1,0 +1,48 @@
+;------------------------------------------------------------------------------
+; Replaces some words too complicated or inappropriate for bambis
+;------------------------------------------------------------------------------
+
+loadWordReplacer(state) {
+	if (state == true) {
+		Hotstring("B Z0")
+		Hotstring("::little", "lil'")
+		Hotstring(":a lil': bit", "{BS 6}kinda")
+		Hotstring("::kind of", "kinda")
+		Hotstring("::okay", "okie")
+		Hotstring("::ok", "okie")
+		Hotstring("::oki", "okie")
+		Hotstring("::delicious", "yummy")
+		Hotstring("::tasty", "yummy ")
+		Hotstring("::best", "bestest")
+		Hotstring("::better", "bettah")
+		Hotstring("::god", "gawd")
+		Hotstring("::wow", "oh gawd")
+		Hotstring("::hot", "hawt")
+		Hotstring("::probably", "totally")
+		Hotstring("::girls", "girlz")
+		hotstring("::woman", "girl")
+		hotstring("::women", "girlz")
+		Hotstring("::dumb", "dum")
+		Hotstring("::confused", "ditzy")
+		Hotstring("::very", "so")
+		Hotstring("::thus", "so")
+		; Hotstring("::so", "like so")
+		Hotstring("::really", "rly")
+		Hotstring("::tits", "titties")
+		Hotstring("::boobs", "bewbz")
+		Hotstring("::boobies", "bewbz")
+		Hotstring("::though", "tho")
+		Hotstring("::through", "thru")
+		Hotstring("::thanks", "thankies")
+		Hotstring("::what's", "watz")
+		Hotstring("::what", "wat")
+		Hotstring("::that's", "datz")
+		Hotstring("::thats", "datz")
+		Hotstring("::thatz", "datz")
+		Hotstring(":*:this ", "dis` `")
+		Hotstring("::you", "u")
+		Hotstring("::you're", "u're")
+		hotstring("::whatever", "whatevz")
+		Hotstring("reset")
+	}
+}
