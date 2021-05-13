@@ -28,7 +28,7 @@ This script automatically replace what you type in discord chat with more Bambi-
 
 ## Building & developpement
 
-- Download and install autohotkey (1.1.33+): [Last AutoHotkey version](https://www.autohotkey.com/download/ahk-install.exe)
+- Download and install autohotkey (1.1.33+): [Lastest AutoHotkey version](https://www.autohotkey.com/download/ahk-install.exe)
 - Clone or fork this github repository to retrieve it on your environment, or directly download the sources.
 - The project is configured to be easily compiled with the "Compile with Options" context menu from [Compile AHK](https://github.com/mercury233/compile-ahk), which allow for an easy customization of the .exe, like its version, icons...
 - It is still possible to run the script through "Bambi Dumbtalk Script.ahk"

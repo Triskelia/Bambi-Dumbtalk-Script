@@ -36,6 +36,7 @@ Icon_5=%In_Dir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
 ; @Ahk2Exe-SetMainIcon %A_ScriptDir%\Resources\img\Dumbtalk-Script-Icon-Paused.ico
 ; @Ahk2Exe-ExeName %A_ScriptDir%\Bambi Dumbtalk Script.ahk
 
+version = 0.8
 #Include %A_ScriptDir%\SubScripts\Settings.ahk
 SetTitleMatchMode, 2
 GroupAdd, handledApps, %applicationHandled%

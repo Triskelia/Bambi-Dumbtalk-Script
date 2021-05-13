@@ -65,6 +65,8 @@ IniRead, settingSummary_Setting, %A_ScriptDir%\settings.ini, DEBUG, settingSumma
 if (%settingSummary_Setting%) {
 	MsgBox, 
 	(LTrim
+		Version : %version%
+		
 		[SETTINGS]
 		Application Handled = %applicationHandled_Setting%
 		Bambi Mode = %bambiMode_Setting%
