@@ -1,6 +1,7 @@
 ;------------------------------------------------------------------------------
-; Informal contractions (gonna, wanna, etc.)
+; Informal contractions
 ;------------------------------------------------------------------------------
+; gonna, wanna, etc...
 
 loadContractionsInformal(state) {
 	if (state == true) {

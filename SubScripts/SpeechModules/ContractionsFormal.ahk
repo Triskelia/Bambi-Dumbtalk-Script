@@ -1,10 +1,12 @@
 ;------------------------------------------------------------------------------
-; Formal contractions (aren't, could've, how're, etc.)
+; Formal contractions
 ;------------------------------------------------------------------------------
+; aren't, could've, how're, etc...
 
 loadContractionsFormal(state) {
 	if (state == true) {
 		Hotstring("B Z0")
+		Hotstring("::z", "a")
 		Hotstring("::are not", "aren't")
 		Hotstring("::can not", "can't")
 		Hotstring("::cannot", "can't")

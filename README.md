@@ -14,7 +14,7 @@ This script automatically replace what you type in discord chat with more Bambi-
 
 ## Instalation instructions
 
-- Download the [lastest release](https://github.com/Triskelia/Bambi-Dumbtalk-Script/releases/latest) (Windows only, this is an autohotkey limitation)
+- Download the [lastest release](https://gitgud.io/Triskelia/bambi-dumbtalk-script/-/releases) (Windows only, this is an autohotkey limitation)
 - Extract the archive
 - Edit the file "settings.ini" if you wish (changes to that file are only taken into account when the script starts)
 - Double-click on the "Bambi Dumbtalk Script.exe" file to launch the script. It should now work on the Discord desktop app
@@ -47,4 +47,4 @@ You will need to exit and restart the script in order for the new settings to be
 
 I'm always looking for help to populate the script with new words, especially simple replacement for complexe words.
 
-- Feel free to create new issues for bugs and suggestions there: [Issue Board](https://github.com/Triskelia/Bambi-Dumbtalk-Script/issues)
+- Feel free to create new issues for bugs and suggestions there: [Issue Board](https://gitgud.io/Triskelia/bambi-dumbtalk-script/-/issues)

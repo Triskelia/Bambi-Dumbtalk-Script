@@ -1,6 +1,7 @@
 ﻿;------------------------------------------------------------------------------
 ; Words randomizers
 ;------------------------------------------------------------------------------
+; Replaces some words from a pool of more fitting synonyms. (like world replacer, but with several possible outcome)
 
 loadWordsRandomizer(state) {
 	if (state == true) {

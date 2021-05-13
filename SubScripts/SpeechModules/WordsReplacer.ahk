@@ -1,6 +1,7 @@
 ;------------------------------------------------------------------------------
-; Replaces some words too complicated or inappropriate for bambis
+; Words Replacer
 ;------------------------------------------------------------------------------
+; Replaces common words with simpler or more bimbo-like versions. (ie. "best" => "bestest", "confused" => "ditzy"...)
 
 loadWordReplacer(state) {
 	if (state == true) {

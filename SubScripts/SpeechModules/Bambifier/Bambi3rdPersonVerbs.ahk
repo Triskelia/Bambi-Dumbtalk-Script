@@ -1,4 +1,9 @@
-﻿#Hotstring B Z ; Conjugates verbs to third person
+﻿;------------------------------------------------------------------------------
+; Bambi 3rd Person Verbs
+;------------------------------------------------------------------------------
+; Changes verbs to the 3rd person when refering to yourself as Bambi (Non exhaustive list)
+
+#Hotstring B Z ; Conjugates verbs to third person
 ; Common bambi related verbs
 :bambi: bend:: bends
 :bambi: bounce:: bounces
@@ -127,7 +132,7 @@
 :bambi: meet:: meets
 :bambi: thank:: thanks
 :bambi: type:: types
-:bambi: use:: uses 
+:bambi: use:: uses
 return
 
 

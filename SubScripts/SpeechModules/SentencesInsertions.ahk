@@ -1,8 +1,11 @@
 ﻿;------------------------------------------------------------------------------
-; Random sentences insertion
+; Random sentences insertion (Hesitation Marks & Horny Thoughts)
 ;------------------------------------------------------------------------------
+; Hesitation Marks: Inserts some hesitation marks (ie. "ummm..." or "like...") from time to time
+; Horny Thoughts: Inserts some horny thoughts (ie. "... *god bambi is horny*...") from time to time (less common than hesitation marks)
 
-loadHesitationsAndHornyThoughts(state) { ; Script had some issues and weirdness with random insertion, so I had to only allow it after some specific words
+; Script had some issues and weirdness with random insertion, so it had to only be allowed after some specific words
+loadHesitationsAndHornyThoughts(state) {
 	Hotstring("B0 Z")
 	Hotstring(":*:and ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":*:could ", Func("insertHesitationsAndHornyThoughts"))
@@ -21,7 +24,7 @@ insertHesitationsAndHornyThoughts() {
 			Random, Var, 1, 5 ; 1 chance out of 5 to trigger this if we enter this block
 			if (var = 1) {
 				sStrings := "like... |like, |like, |hmm... |like... |uhhh... |ummm... |um |er |uh |"
-				randomString(sStrings, 10) 
+				randomString(sStrings, 10)
 			}
 		}
 	} else {

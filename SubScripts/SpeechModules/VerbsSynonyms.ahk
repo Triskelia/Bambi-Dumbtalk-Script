@@ -1,9 +1,7 @@
-; #Hotstring B Z
-; :bambi: laugh:: giggles
-; :bambi: laughs:: giggles
-; :bambi: think:: believes ; Bambi doesn't think
-; :bambi: thinks:: believes
-; return
+;------------------------------------------------------------------------------
+; Verbs synonyms
+;------------------------------------------------------------------------------
+; Replaces some specifics verbs with more fitting synonyms. ("Bambi laughs" => "Bambi giggles")
 
 loadVerbsSynonyms(state) {
 	if (state == true) {

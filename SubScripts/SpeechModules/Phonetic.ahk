@@ -1,20 +1,7 @@
 ;------------------------------------------------------------------------------
-; Sound replacements
+; Phonetic
 ;------------------------------------------------------------------------------
-
-; #Hotstring B Z ; Place exceptions here, words which shouldn't be altered by the next hotstring
-; ::cock::cock
-
-; #Hotstring B Z
-; :?:ck::k
-; :?:ome::um
-; :?:ewd::ood
-; :?:ph::f
-; :?:ing::in'
-; :?:ough::uff
-; return
-
-
+; Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
 
 loadPhonetic(state) {
 	if (state == true) {

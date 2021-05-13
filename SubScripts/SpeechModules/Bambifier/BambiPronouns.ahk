@@ -1,6 +1,7 @@
 ;------------------------------------------------------------------------------
-; Words, pronouns, nouns, emotes...
+; Bambi Pronouns
 ;------------------------------------------------------------------------------
+; Forces you to refer to yourself as Bambi (ie. "I" => "Bambi", "My" => "Bambi's"...)
 
 loadBambiPronouns(state) {
 	if (state == true) {
