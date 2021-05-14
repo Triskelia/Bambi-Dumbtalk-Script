@@ -1,6 +1,8 @@
-@echo ====================================================================================
-@echo Prerequisite: Need to have the 7Zip directory added to the PATH environment variable
-@echo ====================================================================================
+@echo ========================================================================================
+@echo Prerequisites: 
+@echo - Need to have the 7Zip directory added to the PATH environment variable of Windows
+@echo - The Bambi Dumbtalk Script.exe file need to have already been compliled with Autohotkey
+@echo ========================================================================================
 @echo.
 
 @echo off
@@ -30,9 +32,9 @@ if not exist "Build\" @mkdir "Build"
 @rd /S /Q "Build\%packageName%"
 
 @echo.
-@echo ====================================================================================
+@echo ========================================================================================
 @echo Build Finished
-@echo ====================================================================================
+@echo ========================================================================================
 @echo Package location : "Build\%packageName%.zip"
 @echo.
 @echo.
