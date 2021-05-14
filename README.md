@@ -48,3 +48,7 @@ You will need to exit and restart the script in order for the new settings to be
 I'm always looking for help to populate the script with new words, especially simple replacement for complexe words.
 
 - Feel free to create new issues for bugs and suggestions there: [Issue Board](https://github.com/Triskelia/Bambi-Dumbtalk-Script/issues)
+
+## Credits
+
+- [LoonyLadle](https://github.com/LoonyLadle): Some features were inspired from their [pull request](https://github.com/Triskelia/Bambi-Dumbtalk-Script/pull/2)
