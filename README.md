@@ -1,6 +1,6 @@
-![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
-
 # Bambi Dumbtalk Script
+
+![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
 
 This script automatically replace what you type in discord chat with more Bambi-like stuff.
 
