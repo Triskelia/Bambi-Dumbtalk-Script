@@ -35,7 +35,7 @@ global phonetic = %phonetic_Setting%
 IniRead, verbsSynonyms_Setting, %A_ScriptDir%\settings.ini, SETTINGS, verbsSynonyms
 global verbsSynonyms = %verbsSynonyms_Setting%
 
-; Punctuation: Randomly turns periods into questions or exclamations
+; Punctuation: Randomly turns periods into questions, exclamations or tilde
 IniRead, punctuation_Setting, %A_ScriptDir%\settings.ini, SETTINGS, punctuation
 global punctuation = %punctuation_Setting%
 

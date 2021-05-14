@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------------------
 ; Punctuation
 ;------------------------------------------------------------------------------
-; Randomly turns periods into questions or exclamations
+; Randomly turns periods into questions, exclamations or tilde
 
 loadPunctuation(state) {
 	if (state == true) {
