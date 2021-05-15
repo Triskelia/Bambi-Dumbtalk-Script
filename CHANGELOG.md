@@ -1,10 +1,11 @@
 # Bambi Dumbtalk Script Changelog
 
-## 1.0.1 (Unreleased)
+## 1.0.1 (2021-05-15)
 
 ### Fixes
 
 - Fixe `i have` becoming `bambi is` in bambi mode
+- New contractions and some refactoring
 - Some other minor bug fixes & tweaks
 
 ## 1.0 (2021-05-14)

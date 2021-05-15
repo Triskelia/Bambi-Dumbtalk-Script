@@ -9,7 +9,7 @@ Created_Date=1
 Set_Version_Info=1
 Company_Name=Triskelia (Triskel#0001)
 File_Description=Script automatically replacing what you type in discord desktop app with more Bambi-like stuff.
-File_Version=1.0.0.0
+File_Version=1.0.1.0
 Inc_File_Version=0
 Internal_Name=Bambi Dumbtalk Script.ahk
 Legal_Copyright=(c) 2017-2021 Triskelia (Triskel#0001)
@@ -37,7 +37,7 @@ Native Compile SETTINGS END
 ;------------------------------------------------------------------------------
 ; a fun script made by Bambi Trisky for her fellow bambi friends <3
 
-version = 1.0
+version = 1.0.1
 #Include %A_ScriptDir%\SubScripts\Utils\Settings.ahk
 
 SetTitleMatchMode, 2
