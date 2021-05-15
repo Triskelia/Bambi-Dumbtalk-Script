@@ -6,7 +6,7 @@
 loadPunctuation(state) {
 	if (state == true) {
 		Hotstring("B0")
-		Hotstring(":*.:.", Func("elipisiHandler"))
+		Hotstring(":*:.", Func("elipisiHandler"))
 		Hotstring(":?:.", Func("replacePunctuation"))
 	}
 }
