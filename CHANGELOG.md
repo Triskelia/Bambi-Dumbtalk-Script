@@ -1,16 +1,22 @@
 # Bambi Dumbtalk Script Changelog
 
-## (Unreleased)
+## 1.0.1 (Unreleased)
+
+### Fixes
+
+- Fixe `i have` becoming `bambi is` in bambi mode
 
 ## 1.0 (2021-05-14)
 
 ### New speech features
+
 - Bambi Mode: You can now disable the bambi mode in the settings to just sound like a regular bimbo
 - Forced Contractions: aren't, could've, how're, gonna, wanna, etc...
 - Phonetic: Replaces some common word sounds with phonetically similar ones (ie. "-ome" => "-um", "-ing" => "-in'")
 - Punctuation: Randomly turns periods into questions, exclamations or tilde
 
 ### Major refactoring
+
 - Subscripts rearranged
 - Compiled the script into a .exe
   - Autohotkey shouldn't be necessary to run it anymore, it's embedded in the executable

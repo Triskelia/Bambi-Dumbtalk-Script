@@ -6,7 +6,6 @@
 loadBambiPronouns(state) {
 	if (state == true) {
 		Hotstring("B Z0")
-		Hotstring("::bambi", "bambi")
 		Hotstring("::do i", "does bambi")
 		Hotstring("::am i", "is bambi")
 		Hotstring("::have i", "has bambi")
