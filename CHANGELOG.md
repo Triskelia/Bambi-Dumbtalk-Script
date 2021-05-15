@@ -5,6 +5,7 @@
 ### Fixes
 
 - Fixe `i have` becoming `bambi is` in bambi mode
+- Some other minor bug fixes & tweaks
 
 ## 1.0 (2021-05-14)
 

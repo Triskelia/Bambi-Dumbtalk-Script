@@ -2,7 +2,7 @@
 
 ![Dumbtalk Script Icon - Running_128](https://user-images.githubusercontent.com/5974879/118271520-af706a80-b4c1-11eb-8d0a-18f69c791f4c.png)
 
-This script automatically replace what you type in discord chat with more Bambi-like stuff.
+This script automatically replaces what you type in discord chat with more Bambi-like stuff.
 
 ## Features
 
@@ -44,6 +44,7 @@ You will need to exit and restart the script in order for the new settings to be
 ## Known bugs
 
 - Some verbs will sometimes automatically be conjugated to third person when they shouldn't, seems to be a limitation with Autohotkey
+- On rare occasions, " have" will be replaced by " has" in bambi mode. I've tried to fix it, but it seems to be the only way to have the "I have" replaced by "Bambi has" working, which is more important. And since "has" instead of "have" often sounds cute, I guess we can live with that.
 
 ## Contributing
 

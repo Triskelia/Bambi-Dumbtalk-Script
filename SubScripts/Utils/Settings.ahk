@@ -11,7 +11,7 @@ global bambiMode = %bambiMode_Setting%
 IniRead, formalContractions_Setting, %A_ScriptDir%\settings.ini, SETTINGS, formalContractions
 global formalContractions = %formalContractions_Setting%
 
-; Informal contractions: gonna, wanna, etc...
+; Informal contractions: aint, gonna, wanna, etc... (will override some formal contractions)
 IniRead, informalContractions_Setting, %A_ScriptDir%\settings.ini, SETTINGS, informalContractions
 global informalContractions = %informalContractions_Setting%
 
