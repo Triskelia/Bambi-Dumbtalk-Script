@@ -8,11 +8,13 @@
 loadHesitationsAndHornyThoughts(state) {
 	Hotstring("B0 Z")
 	Hotstring(":*:and ", Func("insertHesitationsAndHornyThoughts"))
-	Hotstring(":*:could ", Func("insertHesitationsAndHornyThoughts"))
-	Hotstring(":*:should ", Func("insertHesitationsAndHornyThoughts"))
-	Hotstring(":*:would ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":*:to ", Func("insertHesitationsAndHornyThoughts"))
 	Hotstring(":?*:, ", Func("insertHesitationsAndHornyThoughts"))
+	if (formalContractions = false) { ; Breaks formal contraction, only activate these hotstrings if it's off
+		Hotstring(":*:could ", Func("insertHesitationsAndHornyThoughts"))
+		Hotstring(":*:should ", Func("insertHesitationsAndHornyThoughts"))
+		Hotstring(":*:would ", Func("insertHesitationsAndHornyThoughts"))
+	}
 	Hotstring("reset")
 }
 
