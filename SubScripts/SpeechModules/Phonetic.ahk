@@ -8,6 +8,7 @@ loadPhonetic(state) {
 		Hotstring("B Z")
 		; Place exceptions here, words which shouldn't be altered by the next hotstrings
 		Hotstring("::cock", "cock")
+		Hotstring("::suck", "suck")
 
 		; Phonetic alterations
 		Hotstring(":?:ck", "k")
